@@ -54,8 +54,9 @@ public class LoginInterceptor implements HandlerInterceptor {
         //判断用户token是否有效
         boolean exist = userSessionService.isUserTokenExist(token);
         if (exist) {
-            log.info("更新token在redis中会话时间");
-            userSessionService.updateUserSession(token);
+//            log.info("更新token在redis中会话时间");
+            //TODO 更新token
+//            userSessionService.updateUserSession(token);
             return true;
         } else {
             //如果开启测试环境，所有请求放行

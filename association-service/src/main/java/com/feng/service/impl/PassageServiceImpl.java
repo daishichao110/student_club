@@ -82,7 +82,8 @@ public class PassageServiceImpl implements PassageService {
     }
 
     @Override
-    @Cacheable(value = "passage")
+//    @Cacheable(value = "passage")
+    //todo cache注释掉了
     public PassageFileDto getInfoById(Integer id) {
         PassageFileDto passageFileDto = passageMapper.getInfoById(id);
         if (passageFileDto == null) {

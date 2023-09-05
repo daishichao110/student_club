@@ -79,7 +79,8 @@ public class ActivityServiceImpl extends ServiceImpl<ActivityMapper, Activity> i
     }
 
     @Override
-    @Cacheable(value = "activity")
+//    @Cacheable(value = "activity")
+    //todo cache注释
     public ActivityFileDto getInfoById(Integer id) {
         ActivityFileDto activityFileDto = activityMapper.getInfoById(id);
         if (activityFileDto == null) {

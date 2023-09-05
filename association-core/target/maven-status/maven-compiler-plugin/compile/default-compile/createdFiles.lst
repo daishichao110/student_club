@@ -4,7 +4,6 @@ com/feng/exception/BusinessException.class
 com/feng/config/ValidatorConfig.class
 com/feng/exception/handler/GlobalExceptionHandler.class
 com/feng/config/WebMvcConfiguration$1.class
-com/feng/service/RedisOperatorService.class
 com/feng/config/RedisConfig.class
 com/feng/entity/ResponseResult.class
 com/feng/enums/ErrorEnum.class
